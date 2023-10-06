@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu exemplo</title>
+    <style>
+        body {
+            background-color: #D19E7B;
+            font: normal 16px Arial,Helvetica,sans-serif;
+
+        }
+        .menuitem {
+            display: inline-block;
+        
+        }
+        div > .submenu {
+               display: none;
+        }
+        div:hover .submenu {
+            display: block;
+            background-color: #6c4e14;
+            color: white;
+            width: 170px;
+            list-style-type: none;
+        }
+        .submenuitens::before{
+            content: '→';
+        }
+        .submenuitens::after{
+            content: '←';
+        }
+       div:active .submenu{
+        background-color: #4b3710;
+       }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurante X</h1>
+        <nav>
+            <ul>
+                <div class="menudiv">
+                    <li class="menuitem">Cardapios</li>
+                     <ul class="submenu">
+                        <li class="submenuitens">Pratos principais</li>
+                        <li class="submenuitens">Bebidas</li>
+                        <li class="submenuitens">Sobremesas</li>
+                     </ul>
+                </div>
+                <div class="menudiv">
+                    <li class="menuitem">Chefs</li>
+                    <ul class="submenu">
+                        <li class="submenuitens">Henrique Fogaça</li>
+                        <li class="submenuitens">Jacquin</li>
+                        <li class="submenuitens">Paola Carosela</li>
+                    </ul>
+                </div>
+                <div class="menudiv">
+                    <li class="menuitem">Contato</li>
+                    <ul class="submenu">
+                        <li class="submenuitens">Email</li>
+                        <li class="submenuitens">Telefone</li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

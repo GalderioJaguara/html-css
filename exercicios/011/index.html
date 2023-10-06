@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagem dinamicas</h1>
+     <p>Imagens de tamanhos diferentes para diversos tipos de dispositivos</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="Imagens/p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="Imagens/m.png" type="image/png">
+        <img src="Imagens/g.png" alt="foto-dinamica">
+    </picture>
+    <h1>Colocando audios em HTML 5  </h1>
+    <p>Bon jovi - Have a Nice Day - Demo</p>
+    <audio preload="metadata" controls autoplay>
+        <source src="midia/have-a-nice-day-demo.mp3" type="audio/mpeg">
+        <p>seu navegador não consegue carregar esse tipo de mídia</p>
+    </audio>
+    <p>Guabanara podcast</p>
+      <audio preload="metadata" controls>
+        <source src="midia/guanacast.mp3" type="audio/mpeg">
+      </audio>
+    </body>
+</html>
