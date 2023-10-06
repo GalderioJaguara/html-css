@@ -39,21 +39,28 @@ main {
     color: #c5ebd6;
     text-align: center;
     padding-top: 20px;
+    margin: 0px;
 }
 header > p {
     text-align: center;
     color: #c5ebd6;
 }
 
-ul > li {
-    display: inline-block;
-    color: #c5ebd6;
-}
 ul {
-    margin: 0px;
     padding: 10px;
-    margin-left: 0px;
+    margin-bottom: 0px;
 }
+a {
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    color: #c5ebd6;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+
 .titulo {
     font-family: 'idroid',sans-serif;
     color: #063D1E;
