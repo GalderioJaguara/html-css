@@ -61,6 +61,7 @@ a {
 }
 
 
+
 .titulo {
     font-family: 'idroid',sans-serif;
     color: #063D1E;
@@ -91,7 +92,11 @@ aside > h3 {
 
 aside > p {
     padding: 0px 10px 0px 10px;
+
     
+}
+aside > p::before {
+        content: '\2713';      
 }
 p {
     text-indent: 25px;
