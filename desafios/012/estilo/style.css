@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --font-padrao: Verdana, sans-serif;
+    --font-poema: 'Sriracha', cursive;
+    --fonte-titulo: 'Passion One', sans-serif;
+    --font-poema2: 'Dancing Script', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+html body{
+    min-height: 100vh;
+    background-color: dark;
+    font-family: var(--font-padrao);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte-titulo);
+}
+
+header p {
+    padding-bottom: 50px;
+}
+a{
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 3em;
+    font-family: var(--font-poema2);
+    font-size: 2em;
+}
+section > p {
+    padding-bottom: 1.2em;
+}
+
+.normal{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+.imagem{
+    background-color: rgba(0, 0, 0, 0.701);
+    color: white;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.184);
+}
+
+.imagem > p{
+    background-color: rgba(0, 0, 0, 0.312);
+    display: inline-block;
+    padding: 3em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.394);
+}
+
+#im1{
+    background-image: url('/desafios/012/imagens/background001.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#im2{
+    background-image: url('/desafios/012/imagens/background002.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
