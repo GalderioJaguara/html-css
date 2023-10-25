@@ -73,13 +73,13 @@ section > p {
 }
 
 #im1{
-    background-image: url('/desafios/012/imagens/background001.jpg');
+    background-image: url('../imagens/background001.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
 
 #im2{
-    background-image: url('/desafios/012/imagens/background002.jpg');
+    background-image: url('../imagens/background002.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
