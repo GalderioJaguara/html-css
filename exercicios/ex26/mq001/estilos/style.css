@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 100%, rgba(0,212,255,1) 100%); 
+}
+
+menu li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 2em;
+    cursor: pointer;
+}
+menu li:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
+article h2{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1em;
+}
+article p {
+    text-align: justify;
+    text-indent: 1.5em;
+}
