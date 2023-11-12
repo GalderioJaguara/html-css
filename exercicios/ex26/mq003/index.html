@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-*{
+        /* Delcarações gerais */
+        *{
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -21,23 +22,23 @@ h1 {
     text-shadow: 3px 3px 0px #1b2cae;
     padding: 10px;
 }
-@media screen and (orientation:portrait) {
-    body{
-        background: url('./imagens/cev-portrait.jpg');
+/*Declarações retrato*/
+@media screen and (orientation: portrait) {
+    body {
+        background: url('../mq003/imagens/cev-portrait.jpg');
         background-position: center bottom;
+        background-size: contain;
+         background-repeat: no-repeat;
+    }
+}
+@media screen and (orientation: landscape) {
+    body{
+        background: url('../mq003/imagens/cev-landscape.jpg');
+        background-position: bottom center;
         background-size: contain;
         background-repeat: no-repeat;
     }
 }
-@media screen and (orientation: landscape) {
-        body {
-            background: url('./imagens/cev-landscape.jpg');
-            background-position: left bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-}
-
     </style>
 </head>
 <body>
