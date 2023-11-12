@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media queries</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <nav>
+        <span class="material-symbols-outlined" id="burger" onclick="clickMenu()">
+            menu
+            </span>
+        <nav id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -20,8 +26,21 @@
     </header>
     <main>
         <article>
-            
+            <h1>Lorem ipsum dolor</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti hic cumque explicabo magni omnis ex nemo magnam, iusto, et in ad tempore aspernatur aperiam! Ipsam, culpa eum natus soluta alias atque. Tenetur necessitatibus incidunt facere? Consectetur aspernatur omnis asperiores eos, modi iste reiciendis provident, beatae tenetur ad ratione assumenda sunt.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, assumenda? Quod animi, doloribus, in facilis cumque veniam ab eligendi facere dolor libero, laborum inventore id hic. Molestias similique doloribus reiciendis alias itaque adipisci blanditiis laboriosam, repellat possimus amet velit iure quam repellendus ex minus quae eaque, unde voluptatem eveniet illum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore iusto pariatur vero, recusandae placeat dicta molestias repudiandae nisi omnis perspiciatis minus deserunt officia! Aspernatur rerum, aliquam eius tenetur voluptatibus placeat enim odit perspiciatis adipisci reprehenderit tempore rem fugiat sapiente natus deleniti ea quaerat et ipsam ex, magnam ducimus nihil ad fugit veritatis. Optio fuga necessitatibus id temporibus doloremque labore officiis alias, recusandae iste unde nobis corrupti natus, illo doloribus voluptatibus fugit enim provident hic asperiores est quae deserunt tempora repudiandae!</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none';
+           } else {
+            itens.style.display = 'block';
+           }
+
+        }
+    </script>
 </body>
 </html>
