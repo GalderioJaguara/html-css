@@ -6,9 +6,9 @@
     <title>Media queries</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
+    <link rel="stylesheet" href="media-query.css">k
 </head>
-<body>
+<body onresize="menuWide()">
     <header>
         <h1>Meu site</h1>
         <span class="material-symbols-outlined" id="burger" onclick="clickMenu()">
@@ -40,6 +40,13 @@
             itens.style.display = 'block';
            }
 
+        }
+        function menuWide() {
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            }
         }
     </script>
 </body>
